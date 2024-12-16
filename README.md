@@ -15,11 +15,19 @@ This project involves building a Random Forest Classifier to predict whether a c
 * Dropped date columns after extracting month features.
 * Checked and handled multicollinearity between features.
 ## Modeling:
+* I split the data vertically and horizontally. I created an Undersample and Oversample of the data.
+* I created a Baseline for the model.
 * Used Random Forest Classifier and evaluated the model with accuracy, precision, and confusion matrix metrics.
-* Tested the model with undersampling and oversampling techniques.
 ## Evaluation:
-* Evaluated the model’s performance and checked the feature importance to understand which factors influenced the churn prediction.
+* Evaluated the model’s performance and created a visualization that displayed the feature importance to understand which factors influenced the churn prediction.
+* I saved my model to a pickle file.
+* Created a function that will:
+    1.  Recieve a csv file path and model path
+    2. Create a prediction 
+    3. Add prediction and prediction probability to the existing X_test file
+    4. Save the X_test into the device as a csv_file.
 ## Key Insights:
 * Price sensitivity was not the dominant factor in churn.
 * Features like net margin, customer tenure, and forecast consumption had a much stronger influence.
 * Time-related features such as the number of months active were also significant predictors.
+<img width="641" alt="Exec sum" src="https://github.com/user-attachments/assets/1b39b8ed-1d6f-4d1b-bf88-e02ea55dbd43" />
